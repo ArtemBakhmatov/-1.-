@@ -1,4 +1,5 @@
 "use strict";      // Строгий режим
+
 // Импоритируем модули
 const gulp = require("gulp");
 const webpack = require("webpack-stream");
@@ -6,6 +7,7 @@ const browsersync = require("browser-sync");
 const htmlmin = require('gulp-htmlmin');
 // Создаем переменную
 const dist = "./dist/";
+
 
 gulp.task("copy-html", () => {
     return gulp.src("./src/index.html")
