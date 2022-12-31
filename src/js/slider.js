@@ -1,3 +1,6 @@
+import $ from 'jquery';  // $ - папка node modules
+import 'slick-carousel'; // импортируется из package.json
+
 $(document).ready(function() {
     $('.glazing_slider').slick({
         infinite: true,
