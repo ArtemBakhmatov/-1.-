@@ -18,6 +18,20 @@ body {
   color: red;
 }
 
+.faded {
+  animation-name: faded;
+  animation-duration: 1.5s;
+}
+
+@keyframes faded {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 a:hover {
   text-decoration: none;
 }
@@ -1816,5 +1830,14 @@ textarea:focus {
     /*css animations*/
     -webkit-animation: none !important;
     animation: none !important;
+  }
+}
+
+@media(max-width: 375px) {
+  .timer1 {
+    width: 290px;
+  }
+  .numbers1 {
+    font-size: 35px;
   }
 }
